@@ -1,0 +1,540 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Now Display', 'Helvetica', 'Arial', sans-serif;
+    background-color: #000000;
+    color: #FFFFFF;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+    margin: 0 0 15px 0;
+}
+
+p {
+    color: #C7C8CA;
+    margin: 0 0 15px 0;
+    font-size: 10.5pt;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+li {
+    color: #C7C8CA;
+    margin-bottom: 8px;
+    font-size: 10pt;
+}
+.grid-table {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 20px;
+    margin: 20px 0;
+}
+
+.grid-cell {
+    display: table-cell;
+    vertical-align: top;
+    background: #111111;
+    padding: 25px;
+    border-radius: 4px;
+    border: 1px solid #222222;
+}
+
+.section-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.btn-primary {
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 10px 22px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 10pt;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background-color: #FF6D00;
+    color: #FFFFFF;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    padding: 12px 26px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 10pt;
+    display: inline-block;
+}
+
+.btn-secondary:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.btn-accent {
+    background-color: #FF6D00;
+    color: #FFFFFF;
+    padding: 12px 26px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 10pt;
+    display: inline-block;
+}
+
+.btn-accent:hover {
+    background-color: #E9533A;
+}
+
+.nike-nav {
+    background-color: #000000;
+    border-bottom: 1px solid #111111;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: block;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
+}
+
+.logo-section {
+    float: left;
+    display: block;
+    margin-top: 3px;
+}
+
+.nike-logo-img {
+    height: 30px;
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.brand-split {
+    color: #333333;
+    margin: 0 12px;
+    font-size: 14pt;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.brand-name {
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    color: #FFFFFF;
+    font-size: 12pt;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.nav-links {
+    display: inline-block;
+    margin-left: 60px;
+    margin-top: 5px;
+}
+
+.nav-links a {
+    color: #C7C8CA;
+    margin-right: 25px;
+    font-size: 9.5pt;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.nav-links a:hover {
+    color: #FF6D00;
+}
+
+.nav-cta {
+    float: right;
+}
+.nav-container::after, .promo-action::after, .footer-bottom::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.hero-section {
+    position: relative;
+    background-color: #0A0A0A;
+    background-image: linear-gradient(180deg, rgba(187, 44, 44, 0.18) 0%, rgba(0,0,0,0.9) 100%);
+    min-height: 80vh;
+    padding-top: 130px;
+    display: block;
+    text-align: center;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 40px 20px 80px 20px;
+}
+
+.hero-tag {
+    color: #FF6D00;
+    font-weight: bold;
+    font-size: 11pt;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.hero-section h1 {
+    font-size: 52pt;
+    line-height: 1.0;
+    margin-bottom: 25px;
+}
+
+.hero-subtitle {
+    font-size: 13pt;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+
+.hero-buttons a {
+    margin: 0 10px 15px 10px;
+}
+
+.strategy-section {
+    background-color: #0A0A0A;
+    border-top: 1px solid #111111;
+}
+
+.info-callout {
+    background-color: #111111;
+    border-left: 4px solid #FF6D00;
+    padding: 30px;
+    border-radius: 0 4px 4px 0;
+}
+
+.info-callout p {
+    color: #FFFFFF;
+    font-size: 11.5pt;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.product-showcase-section {
+    background-color: #0A0A0A;
+    padding: 40px 20px;
+    border-bottom: 1px solid #111111;
+}
+
+.showcase-container {
+    max-width: 565px;
+    margin: 0 auto;
+}
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    background-color: #111111;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid #222222;
+    min-height: 450px;
+}
+
+.main-product-img {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.image-wrapper:hover .main-product-img {
+    transform: scale(1.02);
+}
+
+.image-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.85));
+    padding: 40px 30px 30px 30px;
+}
+
+.caption-tag {
+    color: #FF6D00;
+    font-weight: bold;
+    font-size: 9pt;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.image-caption h2 {
+    font-size: 18pt;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.product-section {
+    background-color: #000000;
+}
+
+.section-title {
+    font-size: 22pt;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.section-desc {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 50px auto;
+    font-size: 11pt;
+}
+
+.card-strength h3 {
+    font-size: 13pt;
+    color: #FF6D00;
+    border-bottom: 1px solid #222222;
+    padding-bottom: 10px;
+}
+
+.tech-specs-container {
+    margin-top: 50px;
+    background: #0A0A0A;
+    padding: 40px;
+    border-radius: 4px;
+    border: 1px solid #111111;
+}
+
+.specs-title {
+    font-size: 15pt;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.specs-table .grid-cell {
+    background: transparent;
+    border: none;
+    padding: 10px;
+}
+
+.specs-table strong {
+    color: #BB2C2C;
+    display: block;
+    margin-bottom: 12px;
+    font-size: 11pt;
+    text-transform: uppercase;
+}
+
+.videos-section {
+    background-color: #0A0A0A;
+}
+
+.video-card {
+    padding: 0;
+    overflow: hidden;
+    background: #111111;
+}
+
+.video-placeholder {
+    background-color: #222222;
+    background-image: linear-gradient(135deg, #111111 0%, #333333 100%);
+    height: 180px;
+    position: relative;
+    text-align: center;
+}
+
+.play-icon {
+    font-size: 28pt;
+    color: #FF6D00;
+    line-height: 180px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    display: inline-block;
+}
+
+.video-card:hover .play-icon {
+    transform: scale(1.15);
+    color: #FFFFFF;
+}
+
+.video-duration {
+    position: absolute;
+    bottom: 10px;
+    right: 12px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #FFFFFF;
+    padding: 2px 6px;
+    border-radius: 2px;
+    font-size: 8pt;
+    margin: 0;
+}
+
+.video-info {
+    padding: 20px;
+}
+
+.video-info h3 {
+    font-size: 11pt;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.promo-section {
+    background-color: #000000;
+}
+
+.promo-box {
+    background-color: #111111;
+    border: 2px solid #BB2C2C;
+    padding: 50px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.promo-badge {
+    background-color: #BB2C2C;
+    color: #FFFFFF;
+    padding: 5px 12px;
+    font-weight: bold;
+    font-size: 8pt;
+    border-radius: 2px;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.promo-box h2 {
+    font-size: 26pt;
+    margin-bottom: 15px;
+}
+
+.perks-table {
+    margin: 30px 0;
+    border-spacing: 15px;
+}
+
+.perk-item {
+    background: #0A0A0A;
+    border: 1px solid #1A1A1A;
+    padding: 20px;
+    text-align: left;
+}
+
+.perk-icon {
+    color: #FF6D00;
+    font-size: 16pt;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.perk-item p {
+    margin: 0;
+    color: #FFFFFF;
+}
+
+.promo-action {
+    border-top: 1px solid #222222;
+    padding-top: 35px;
+    margin-top: 20px;
+}
+
+.disponibilidad-nota {
+    font-size: 11pt;
+    color: #C7C8CA;
+    max-width: 700px;
+    margin: 0 auto 25px auto;
+}
+
+.btn-large {
+    padding: 15px 40px;
+    font-size: 11pt;
+    letter-spacing: 0.5px;
+}
+
+.activation-info {
+    margin-top: 40px;
+    background-image: linear-gradient(90deg, #BB2C2C 0%, #E9533A 100%);
+    padding: 35px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.activation-info h3 {
+    color: #FFFFFF;
+    font-size: 14pt;
+    margin-bottom: 10px;
+}
+
+.activation-info p {
+    color: #FFFFFF;
+    margin: 0;
+    font-size: 10.5pt;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Footer layout rules */
+.nike-footer {
+    background-color: #0A0A0A;
+    border-top: 1px solid #111111;
+    font-size: 9pt;
+}
+
+.nike-footer .section-container {
+    padding: 30px 20px;
+}
+
+.footer-bottom p {
+    float: left;
+    color: #555555;
+    margin: 0;
+}
+
+.footer-links {
+    float: right;
+}
+
+.footer-links a {
+    color: #555555;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    color: #FFFFFF;
+}
